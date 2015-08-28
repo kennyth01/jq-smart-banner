@@ -1,7 +1,7 @@
 # jq-smart-banner
 Custom global Smart App Banner with deeplink support for IOS and Android
 
-[Smart App Banners](http://smartappbanners.com/) provide a uniformed way of promoting mobile apps when viewed in a mobile browser. This jquery plugin is owned by [jasny](https://github.com/jasny/jquery.smartbanner) and was modified a bit to cater a unified smart app banner UI and UX for both IOS and Android.
+[Smart App Banners](http://smartappbanners.com/) provides a uniformed way of promoting mobile apps when viewed in a mobile browser. This jquery plugin is owned by [jasny](https://github.com/jasny/jquery.smartbanner) and was modified a bit to cater a unified smart app banner UI and UX for both IOS and Android.
 
 This plugin should be blended with a deeplink url to open a desired screen inside an app. For deeplink functionality, we will leverage on [hampusohlsson](http://github.com/hampusohlsson/browser-deeplink) deeplink and inject it when a user clicks the button to view or download the app inside the smart app banner
 
