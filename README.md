@@ -32,11 +32,11 @@ This plugin should be blended with a deeplink url to open a desired screen insid
           if( /Android|webOS|iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
         			deeplink.setup({
         						iOS: {
-        							appName: "Trezo",
-        							appId: "950892346",
+        							appName: "YOUR_APP_NAME",
+        							appId: "XXXXXXX",
         						},
         						android: {
-        							appId: "com.sph.zippo"
+        							appId: "YOUR_ANDROID_PACKAGE"
         						}
         			});
         			$.smartbanner({ 
