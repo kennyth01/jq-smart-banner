@@ -4,12 +4,10 @@
     <meta name="author" content="Copy Left">
     <meta name="google-play-app" content="app-id=com.sph.zippo">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="apple-touch-icon" href="http://trezo.sg/m/resources/icons/Icon@2x.png">
-	
     <link rel="stylesheet" href="jquery.smartbanner.css" type="text/css" media="screen">
   </head>
   <body>
-    Open me on a mobile browser
+    Open me on a IOS / Android mobile browser
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
     <script src="jquery.smartbanner.js"></script>
 	<script src="browser-deeplink.js"></script>
@@ -33,6 +31,7 @@
 				inGooglePlay: '',
 				price: '',
 				url: '#',
+                                icon: 'http://trezo.sg/m/resources/icons/Icon@2x.png',
 				onInstall: function() {
 					deeplink.open("trezosg://");
 			  },
