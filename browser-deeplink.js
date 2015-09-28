@@ -186,17 +186,21 @@
             timeout = setTimeout(openAppStore(Date.now()), settings.delay);
         }
         
-        var iframe = document.createElement("iframe");
-        iframe.onload = function() {
-            clearTimeout(timeout);
-            iframe.parentNode.removeChild(iframe);
-            window.location.href = uri;
-        };
-
-        iframe.src = uri;
-        iframe.setAttribute("style", "display:none;");
-        document.body.appendChild(iframe);
-        
+        var ua = window.navigator.userAgent;
+        if (ua.match(/CriOS/) || (ua.match(/Safari/) && ua.match(/Version\/9/))) {
+            //do another approach...
+            document.location = uri;
+        } else {
+            var iframe = document.createElement("iframe");
+            iframe.onload = function() {
+                clearTimeout(timeout);
+                iframe.parentNode.removeChild(iframe);
+                window.location.href = uri;
+            };
+            iframe.src = uri;
+            iframe.setAttribute("style", "display:none;");
+            document.body.appendChild(iframe);
+        }
         return true;
     }
 
